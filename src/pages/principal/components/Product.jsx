@@ -1,9 +1,10 @@
 import { Button, Card, Carousel, Col, Container, Figure, Row } from "react-bootstrap";
+import Img1 from '../../../assets/img/Anuncie.png';
 
 export default function Product() {
     return (
         <Container>
-
+            <img src={Img1} width="989px" height="200px"/>
             <Row>
                 <Col>
                     <Card style={{ width: '18rem' }}>
