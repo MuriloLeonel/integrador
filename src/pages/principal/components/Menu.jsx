@@ -4,7 +4,7 @@ import { Accordion, Nav } from "react-bootstrap";
 export default function Menu() {
     return (
         <div className="Menu">
-            <Accordion defaultActiveKey="0">
+            <Accordion defaultActiveKey="0" className="mt-3">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Categorias</Accordion.Header>
                     <Accordion.Body>
