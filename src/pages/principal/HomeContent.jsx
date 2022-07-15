@@ -6,6 +6,7 @@ import Product from "./components/Product";
 
 export default function HomeContent() {
     return(
+      <div className="">
         <Container>
         <Row>
           <Col md={3}>
@@ -18,5 +19,6 @@ export default function HomeContent() {
           </Col>
         </Row>
       </Container>
+      </div>
     )
 }
