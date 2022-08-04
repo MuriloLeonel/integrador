@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Row, Col } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import Logo from "../../../assets/img/logo.png";
 
 
@@ -16,7 +16,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand href="#home">
                     <img src={Logo} width="50px" height="50px"/>
-                        Abrindo Portas
+                         Abrindo Portas
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -29,10 +29,6 @@ export default function Header() {
                             <NavDropdown title="Cidades" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3">Bauru</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">Pederneiras</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
-                                </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Form className="d-flex me-auto">
