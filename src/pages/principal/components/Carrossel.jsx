@@ -40,24 +40,6 @@ export default function Carrosel() {
                 </Row>
 
             </Carousel.Item>
-
-            <Carousel.Item>
-            <Row>
-                    <Col>
-                    <a href="#"><img src={Loja} class="rounded-circle w-100" /> </a>
-                    </Col>
-                    <Col>
-                    <a href="#"><img src={Loja} class="rounded-circle w-100" /> </a>
-                    </Col>
-                    <Col>
-                    <a href="#"><img src={Loja} class="rounded-circle w-100" /> </a>
-                    </Col>
-                    <Col>
-                    <a href="#"><img src={Loja} class="rounded-circle w-100" /> </a>
-                    </Col>
-                </Row>
-
-            </Carousel.Item>
         </Carousel>
     )
 }
