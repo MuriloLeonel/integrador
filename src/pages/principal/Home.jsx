@@ -1,13 +1,14 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import HomeContent from "./HomeContent";
+import { Outlet } from "react-router-dom";
 
 export default function Home() {
     return (
         <div className="Home">
             <Header />
-            <HomeContent/>
+            <Outlet />
             <Footer />
+            
         </div>
     )
 }

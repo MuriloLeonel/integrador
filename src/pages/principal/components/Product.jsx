@@ -1,4 +1,5 @@
 import { Button, Card, Carousel, Col, Container, Figure, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Product() {
     return (
@@ -14,7 +15,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                 </Card>
                 <Card className="mt-3">
@@ -25,7 +26,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                     
                 </Card>
@@ -39,7 +40,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                 </Card>
                 <Card className="mt-3">
@@ -50,7 +51,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                     
                 </Card>
@@ -64,7 +65,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                 </Card>
                 <Card className="mt-3 mb-5">
@@ -75,7 +76,7 @@ export default function Product() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </Card.Text>
-                        <Button variant="primary">Consultar loja</Button>
+                        <Button as={Link} to={`/sobre`} variant="primary">Consultar loja</Button>
                     </Card.Body>
                     
                 </Card>

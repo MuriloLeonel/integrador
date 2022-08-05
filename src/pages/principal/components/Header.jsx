@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import Logo from "../../../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
             </Navbar>
             <Navbar bg="primary" variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand as={Link} to={`/`}>
                     <img src={Logo} width="50px" height="50px"/>
                          Abrindo Portas
                     </Navbar.Brand>
