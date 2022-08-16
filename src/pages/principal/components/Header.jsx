@@ -42,7 +42,7 @@ export default function Header() {
                             <Button variant="sucess"><i class="bi bi-search"></i></Button>
                         </Form>
                     </Navbar.Collapse>
-                    <Button variant="light" className=""><i class="bi bi-person-fill" />Login</Button>
+                    <Button as={Link} to={`/login`} variant="light" className=""><i class="bi bi-person-fill" />Login</Button>
                 </Container>
             </Navbar>
         </div>

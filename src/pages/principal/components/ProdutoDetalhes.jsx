@@ -1,21 +1,31 @@
 import { Col, Container, Row, Carousel } from "react-bootstrap";
 import Loja from '../../../assets/img/exemplo.jpg';
-import Tenis from '../../../assets/img/tenis.jpg'
+import Tenis from '../../../assets/img/tenis.jpg';
+import Rating from 'react-rating';
 
 export default function ProdutoDetalhes() {
     return (
         <Container>
-            
+
             <Row className="mt-5">
-            <h2>Detalhes</h2>
-                <Col md={5}>
-                    <img src={Loja} width="400" />
+                <h2>Detalhes</h2>
+                <Col>
+                    <img src={Loja} width="600" />
+
+                    <Rating
+                        emptySymbol={<i class="bi bi-star"></i>}
+                        fullSymbol={<i class="bi bi-star-fill"></i>}
+                    />
+
                 </Col>
                 <Col>
                     <h5>Loja Exemplo</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae odio dicta<br /> illo cum vero quae
                         amet alias mollitia accusamus magnam, nulla expedita<br /> cumque voluptates fuga nemo harum illum
                         corporis similique.</p>
+
+
+
                 </Col>
             </Row>
             <Row className="mt-5">

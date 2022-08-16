@@ -7,7 +7,7 @@ export default function Footer() {
             <Container>
                 <Row>
                     <Col md={5}>
-                        <img src={Logo} width="200" /> Abrindo Portas    
+                        <img src={Logo} width="200" /> 
                     </Col>
                     <Col className="p-2">
                     <h6>Menu</h6>
@@ -17,10 +17,10 @@ export default function Footer() {
                     </Col>
                     <Col className="p-5">
                     <h6>Redes Sociais</h6>
-                    <i class="bi bi-twitter me-2"></i>
-                    <i class="bi bi-whatsapp me-2"></i>
-                    <i class="bi bi-facebook me-2"></i>
-                    <i class="bi bi-instagram me-2"></i>
+                    <a href="#"><i class="bi bi-twitter me-2"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp me-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook me-2"></i></a>
+                    <a href="#"><i class="bi bi-instagram me-2"></i></a>
                     </Col>
                     <Col className="p-5">
                     <h6>Contato</h6>
