@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Logo from "../../../assets/img/logo.png";
+import Logo from "../../../assets/img/centro-peia.2.png";
 
 export default function Footer() {
     return (

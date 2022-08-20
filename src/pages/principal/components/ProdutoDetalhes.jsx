@@ -1,15 +1,18 @@
-import { Col, Container, Row, Carousel } from "react-bootstrap";
+import { Col, Container, Row, Carousel, Button } from "react-bootstrap";
 import Loja from '../../../assets/img/exemplo.jpg';
 import Tenis from '../../../assets/img/tenis.jpg';
 import Rating from 'react-rating';
+import { Link } from "react-router-dom";
 
 export default function ProdutoDetalhes() {
     return (
         <Container>
 
-            <Row className="mt-5">
+            <Row>
+                
+                <Col className="mt-4">
+                <Button variant="light" size="sm"><i class="bi bi-arrow-left"></i></Button>{' '}
                 <h2>Detalhes</h2>
-                <Col>
                     <img src={Loja} width="600" />
 
                     <Rating
@@ -18,7 +21,7 @@ export default function ProdutoDetalhes() {
                     />
 
                 </Col>
-                <Col>
+                <Col className="mt-5">
                     <h5>Loja Exemplo</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae odio dicta<br /> illo cum vero quae
                         amet alias mollitia accusamus magnam, nulla expedita<br /> cumque voluptates fuga nemo harum illum

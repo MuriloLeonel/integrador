@@ -12,7 +12,6 @@ export default function Menu() {
                             <Nav.Link>Restaurantes</Nav.Link>
                             <Nav.Link>Lojas de Roupas</Nav.Link>
                             <Nav.Link>PetShops</Nav.Link>
-                            <Nav.Link>Salão de Beleza</Nav.Link>
                             <Nav.Link>Loja de Calçados</Nav.Link>
                             <Nav.Link>SkateShop</Nav.Link>
                         </Nav>

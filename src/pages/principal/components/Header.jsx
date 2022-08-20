@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import Logo from "../../../assets/img/logo.png";
+import Logo from "../../../assets/img/centro-peia.2.png";
 import { Link } from "react-router-dom";
 
 
@@ -9,7 +9,6 @@ export default function Header() {
             <Navbar bg="dark" variant="dark">
                     <Nav className="ms-auto" >
                         <Nav.Link href="#home">Empresas</Nav.Link>
-                        <Nav.Link href="#features">Cidades</Nav.Link>
                         <Nav.Link href="#pricing">Associe-se</Nav.Link>
                     </Nav>
             </Navbar>
@@ -17,7 +16,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand as={Link} to={`/`}>
                     <img src={Logo} width="50px" height="50px"/>
-                         Abrindo Portas
+                        Centro-Peia
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -26,11 +25,6 @@ export default function Header() {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-
-                            <NavDropdown title="Cidades" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">Bauru</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Pederneiras</NavDropdown.Item>
-                            </NavDropdown>
                         </Nav>
                         <Form className="d-flex me-auto">
                             <FormControl
