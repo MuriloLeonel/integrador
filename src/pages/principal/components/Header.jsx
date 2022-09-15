@@ -1,5 +1,5 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import Logo from "../../../assets/img/centro-peia.2.png";
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import Logo from "../../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ export default function Header() {
                 <Container>
                     <Navbar.Brand as={Link} to={`/`}>
                     <img src={Logo} width="50px" height="50px"/>
-                        Centro-Peia
+                        Abrindo Portas
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -36,7 +36,12 @@ export default function Header() {
                             <Button variant="sucess"><i class="bi bi-search"></i></Button>
                         </Form>
                     </Navbar.Collapse>
-                    <Button as={Link} to={`/login`} variant="light" className=""><i class="bi bi-person-fill" />Login</Button>
+                    <DropdownButton id="dropdown-basic-button" title="CONTA">
+                        <Dropdown.Item as={Link} to={`/login`}>Login</Dropdown.Item>
+                        <Dropdown.Item as={Link} to={`/create`}>Criar conta</Dropdown.Item>
+                        <Dropdown.Item as={Link} to={`/parceiro`}>Parceiro Create</Dropdown.Item>
+                        
+                    </DropdownButton>
                 </Container>
             </Navbar>
         </div>
