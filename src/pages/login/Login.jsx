@@ -1,5 +1,5 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import Logo from '../../assets/img/centro-peia.png'
+
 
 export default function Login() {
     return (
@@ -9,7 +9,7 @@ export default function Login() {
                     <Col></Col>
                     <Col>
                         <Form>
-                            <img src={Logo} width="300px" class="mt-4" />
+                            <img width="300px" class="mt-4" />
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email" placeholder="Endereço de Email" />
@@ -20,7 +20,7 @@ export default function Login() {
                                 <Form.Control type="password" placeholder="Digite a senha" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Manter Login" />
+                                <Form.Check type="checkbox" label="Lembra-me" />
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Entrar

@@ -1,22 +1,17 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import Logo from "../../../assets/img/centro-peia.2.png";
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, InputGroup } from 'react-bootstrap';
+import './App.css'
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     return (
         <div className="Header">
-            <Navbar bg="dark" variant="dark">
-                    <Nav className="ms-auto" >
-                        <Nav.Link href="#home">Empresas</Nav.Link>
-                        <Nav.Link href="#pricing">Associe-se</Nav.Link>
-                    </Nav>
-            </Navbar>
-            <Navbar bg="primary" variant="dark" expand="lg">
+            <Navbar className='Navbar02'>
                 <Container>
                     <Navbar.Brand as={Link} to={`/`}>
-                    <img src={Logo} width="50px" height="50px"/>
-                        Centro-Peia
+                    <img/>
+                        BUSNISESS PROJECT
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -26,19 +21,23 @@ export default function Header() {
                             navbarScroll
                         >
                         </Nav>
-                        <Form className="d-flex me-auto">
-                            <FormControl
-                                type="search"
-                                placeholder="Procurar"
-                                className="me-1"
-                                aria-label="Search"
-                            />
-                            <Button variant="sucess"><i class="bi bi-search"></i></Button>
+                        <Form className=" Pesquisa">
+                           <InputGroup>
+                                <FormControl
+                                        type="search"
+                                        placeholder="Procurar"
+                                        className="me-1"
+                                        aria-label="Search"
+                                    />
+                                     <Button variant="secondary" id="button-addon1">
+                                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                                    </Button>
+                           </InputGroup> 
                         </Form>
                     </Navbar.Collapse>
                     <Button as={Link} to={`/login`} variant="light" className=""><i class="bi bi-person-fill" />Login</Button>
                 </Container>
             </Navbar>
         </div>
-    )
+   )
 }
