@@ -3,6 +3,8 @@ import Home from "./pages/principal/Home";
 import HomeContent from "./pages/principal/HomeContent";
 import ProdutoDetalhes from "./pages/principal/components/ProdutoDetalhes";
 import Login from "./pages/login/Login";
+import Create from "./pages/user/cliente/ClientCreate";
+import Parceiro from "./pages/user/parceiro/ParceiroCreate";
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 export default function App() {
@@ -18,6 +20,12 @@ export default function App() {
         <Route index element={<HomeContent />} />
         </Route>
         <Route path="/login" element={<Login />}>
+
+        </Route>
+        <Route path="/create" element={<Create />}>
+
+        </Route>
+        <Route path="/parceiro" element={<Parceiro />}>
 
         </Route>
       </Routes>

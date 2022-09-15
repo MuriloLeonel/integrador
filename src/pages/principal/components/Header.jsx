@@ -1,5 +1,5 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, InputGroup } from 'react-bootstrap';
-import './App.css'
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import Logo from "../../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
@@ -36,6 +36,12 @@ export default function Header() {
                         </Form>
                     </Navbar.Collapse>
                     <Button as={Link} to={`/login`} variant="light" className=""><i class="bi bi-person-fill" />Login</Button>
+                    <DropdownButton id="dropdown-basic-button" title="CONTA">
+                        <Dropdown.Item as={Link} to={`/login`}>Login</Dropdown.Item>
+                        <Dropdown.Item as={Link} to={`/create`}>Criar conta</Dropdown.Item>
+                        <Dropdown.Item as={Link} to={`/parceiro`}>Parceiro Create</Dropdown.Item>
+                        
+                    </DropdownButton>
                 </Container>
             </Navbar>
         </div>
