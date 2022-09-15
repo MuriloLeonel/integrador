@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Dropdown, DropdownButton, InputGroup } from 'react-bootstrap';
 import Logo from "../../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
