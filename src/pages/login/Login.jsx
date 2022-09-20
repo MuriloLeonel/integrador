@@ -1,37 +1,79 @@
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import Logo from '../../assets/img/logo.png'
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
+import Logo from "../../assets/img/Logo2.png";
 
-
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Login() {
-    return (
-        <div className="bg-secundary">
-            <Container >
+  return (
+    <Container
+      fluid
+      className="d-flex vh-100 justify-content-center align-items-center bg-light"
+    >
+      <Col xs={6} sm={8} md={10} lg={8} className="shadow-lg">
+        <Card>
+          <Row className="g-0">
+            <Col md={6}>
+              <img
+                className="img-fluid rounded-start"
+                src={Logo}
+              />
+            </Col>
+            <Col md={6}>
+              <Card.Body className="p-5">
                 <Row>
-                    <Col></Col>
-                    <Col>
-                        <Form>
-                            <img width="300px" class="mt-4" />
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" placeholder="Endereço de Email" />
-                            </Form.Group>
-
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Senha</Form.Label>
-                                <Form.Control type="password" placeholder="Digite a senha" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Lembra-me" />
-                            </Form.Group>
-                            <Button variant="primary" type="submit">
-                                Entrar
-                            </Button>
-                        </Form>
-                    </Col>
-                    <Col></Col>
+                  <Col className="d-flex justify-content-between">
+                    <h3>Entrar</h3>
+                    <div >
+                      <Button
+                        variant="outline-primary"
+                        className="rounded-circle me-1"
+                      >
+                        <FontAwesomeIcon icon={faFacebook} />
+                      </Button>
+                      <Button
+                        variant="outline-primary"
+                        className="rounded-circle"
+                      >
+                        <FontAwesomeIcon icon={faInstagram} />
+                      </Button>
+                    </div>
+                  </Col>
                 </Row>
-            </Container>
-        </div>
-    )
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Endereço de Email"
+                    />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Senha</Form.Label>
+                    <Form.Control
+                      type="password"
+                      placeholder="Digite a senha"
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Lembra-me" />
+                  </Form.Group>
+                  <div className="d-grid gap-2">
+                    <Button
+                      variant="primary"
+                      type="submit"
+                      className="full-width"
+                    >
+                      Entrar
+                    </Button>
+                  </div>
+                </Form>
+              </Card.Body>
+            </Col>
+          </Row>
+        </Card>
+      </Col>
+    </Container>
+  );
 }

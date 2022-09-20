@@ -7,7 +7,7 @@ import lacoste from "../../../assets/img/lacoste.jpg"
 import puma from "../../../assets/img/puma.png"
 import reserva from "../../../assets/img/reserva.png"
 import yamaha from "../../../assets/img/yamaha.png"
-import './App.css'
+
 
 
 export default function Carrosel() {

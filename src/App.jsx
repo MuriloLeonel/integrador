@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Create from "./pages/user/cliente/ClientCreate";
 import Parceiro from "./pages/user/parceiro/ParceiroCreate";
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import './App.css'
 
 export default function App() {
   return (
