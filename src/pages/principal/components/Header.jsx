@@ -1,13 +1,4 @@
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-  InputGroup,
-} from "react-bootstrap";
+import {Navbar, Container,Nav,NavDropdown, Form, FormControl, Button, InputGroup} from "react-bootstrap";
 import Logo from "../../../assets/img/Logo1.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,10 +11,10 @@ export default function Header() {
         <Container>
           <Navbar.Brand as={Link} to={`/`}>
             <img
-              className="Logo1 d-inline-block align-top"
+              className="Logo d-inline-block align-top"
               src={Logo}
-              width="30"
-              height="30"
+              width="80"
+              height="80"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
@@ -36,7 +27,7 @@ export default function Header() {
             >
 
             </Nav> */}
-            <Form className="Pesquisa mx-auto col-4">
+            <Form className="Pesquisa mx-auto col col-md-4">
               <InputGroup className="">
                 <FormControl
                   type="search"
@@ -49,13 +40,11 @@ export default function Header() {
                 </Button>
               </InputGroup>
             </Form>
-
             <Nav>
             <Nav.Link as={Link} to={`/login`}>
             <i class="bi bi-person-fill" />
                 Login
             </Nav.Link>
-
             </Nav>
           </Navbar.Collapse>
         </Container>

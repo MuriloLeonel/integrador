@@ -1,8 +1,9 @@
-import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, Nav, Row } from "react-bootstrap";
 import Logo from "../../assets/img/Logo2.png";
 
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -67,6 +68,12 @@ export default function Login() {
                     >
                       Entrar
                     </Button>
+                        <Button as={Link} to={`/login/create`}>
+                                Cadastrar
+                        </Button>
+                    <div className=" d-grid gap-2">
+                      <Button  variant="link">Esqueceu a Senha? Clique Aqui</Button>
+                    </div>  
                   </div>
                 </Form>
               </Card.Body>

@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/login" element={<Login />}>
 
         </Route>
-        <Route path="/create" element={<Create />}>
+        <Route path="/login/create" element={<Create />}>
 
         </Route>
         <Route path="/parceiro" element={<Parceiro />}>
