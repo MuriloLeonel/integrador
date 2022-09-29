@@ -64,7 +64,7 @@ export default function Product() {
             </Col>
             <Col>
                 <Card>
-                    <Card.Img variant="top" src={oculos} />
+                    <Card.Img variant="top" src={tenis} />
                     <Card.Body>
                         <Card.Title>Loja 3</Card.Title>
                         <Card.Text>
@@ -75,7 +75,7 @@ export default function Product() {
                     </Card.Body>
                 </Card>
                 <Card className="mt-3 mb-5">
-                    <Card.Img variant="top" src={oculos} />
+                    <Card.Img variant="top" src={tenis} />
                     <Card.Body>
                         <Card.Title>Loja 4</Card.Title>
                         <Card.Text>

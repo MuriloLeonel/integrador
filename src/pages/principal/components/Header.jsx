@@ -1,5 +1,5 @@
 import {Navbar, Container,Nav,NavDropdown, Form, FormControl, Button, InputGroup} from "react-bootstrap";
-import Logo from "../../../assets/img/Logo1.png";
+import Logo from "../../../assets/img/Banners.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -13,8 +13,8 @@ export default function Header() {
             <img
               className="Logo d-inline-block align-top"
               src={Logo}
-              width="80"
-              height="80"
+              width="150"
+              height="90"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>

@@ -13,7 +13,6 @@ import yamaha from "../../../assets/img/yamaha.png"
 export default function Carrosel() {
     return (
         <Carousel className="w-200">
-
             <Carousel.Item>
                 <Row>
                     <Col>
@@ -30,8 +29,6 @@ export default function Carrosel() {
                     </Col>
                 </Row>
             </Carousel.Item>
-
-
             <Carousel.Item>
             <Row>
                     <Col>
@@ -46,8 +43,7 @@ export default function Carrosel() {
                     <Col>
                     <a href="#"><img src={reserva} class="rounded-square w-100" /> </a>
                     </Col>
-                </Row>
-
+                </Row>  
             </Carousel.Item>
         </Carousel>
     )
