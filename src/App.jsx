@@ -8,6 +8,7 @@ import Parceiro from "./pages/user/parceiro/ParceiroCreate";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "./App.css";
 import PainelForm from "./pages/painel/PainelForm"
+import Perfil from "./pages/perfil/Perfil";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="sobre" element={<ProdutoDetalhes />} />
             <Route index element={<HomeContent />} />
             <Route path="painel" element={<PainelForm />} />
+            <Route path="/perfil" element={<Perfil />} />
           </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/login/create" element={<Create />}></Route>

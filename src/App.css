@@ -33,7 +33,24 @@
 
 .Login{
     position: absolute;
-    width: 300px;
+    width: 300px;   
     left: 700px;
   
+}
+
+.Cards{
+    position: relative;
+    left: 250px;
+}
+.Descrição{
+    position: absolute;
+    width: 350px;
+}
+.Text{
+    position: relative;
+
+    top: -40px;
+    width: 600px;
+    left: 750px;
+    height: 10px;
 }

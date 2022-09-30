@@ -44,7 +44,7 @@ export default function Carrosel() {
                     <a href="#"><img src={reserva} class="rounded-square w-100" /> </a>
                     </Col>
                 </Row>  
-            </Carousel.Item>
+            </Carousel.Item>    
         </Carousel>
     )
 }
