@@ -15,6 +15,7 @@ export default function Login() {
         <Card>
           <Row className="g-0">
             <Col md={6}>
+            <Button variant="light" as={Link} to="/" size="sm"><i class="bi bi-arrow-left"></i></Button>{'Home'}    
               <img
                 className="img-fluid rounded-start"
                 src={Logo}

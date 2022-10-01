@@ -2,6 +2,7 @@
         import Loja from '../../../assets/img/exemplo.jpg';
         import Tenis from '../../../assets/img/tenis.jpg';
         import Rating from 'react-rating';
+import { Link } from "react-router-dom";
 
 
         export default function ProdutoDetalhes() {
@@ -10,7 +11,7 @@
 
                     <Row>
                     <Col className="mt-5">
-                    <Button variant="light" size="sm"><i class="bi bi-arrow-left"></i></Button>{' '}  
+                    <Button variant="light" as={Link} to="/" size="sm"><i class="bi bi-arrow-left"></i></Button>{'Home'}  
                     <h2>Detalhes</h2>
                             <h5>Loja Exemplo</h5>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae odio dicta<br /> illo cum vero quae

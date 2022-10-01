@@ -1,4 +1,5 @@
 import { Button, Card, Col, Container, Form, Nav, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/img/Logo2.png";
 
 export default function Login() {
@@ -21,6 +22,7 @@ export default function Login() {
                 <Row>
                   <Col className="d-flex justify-content-between">
                     <h3>Cadastro de Usuario</h3>
+                    <Button variant="light" as={Link} to="/" size="sm"><i class="bi bi-arrow-left"></i></Button>{'Home'}  
                   </Col>
                 </Row>
                 <Form>

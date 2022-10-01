@@ -9,6 +9,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "./App.css";
 import PainelForm from "./pages/painel/PainelForm"
 import Perfil from "./pages/perfil/Perfil";
+import Header from "./pages/principal/components/Header";
 
 export default function App() {
   return (
