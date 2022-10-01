@@ -9,7 +9,7 @@ export default function ClientContext({ children }) {
 
   //CRUD
   const create = (client) => {
-    fetch("https://fakestoreapi.com/users",{
+    fetch("https://businessproject-back.herokuapp.com/register",{
       method: "POST",
       body: JSON.stringify(client)
     })
@@ -22,7 +22,7 @@ export default function ClientContext({ children }) {
   const remove = () => {};
 
   const list = () => {
-    fetch("https://fakestoreapi.com/users")
+    fetch("https://businessproject-back.herokuapp.com/cliente")
       .then((res) => res.json())
       .then((json) => setAllClients(json));
   };

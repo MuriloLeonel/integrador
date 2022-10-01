@@ -1,8 +1,8 @@
 import { Button, Card, Col, Container, Form, Nav, Row } from "react-bootstrap";
 import Logo from "../../assets/img/Logo2.png";
-
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Link } from "react-router-dom";
 
 export default function Login() {
@@ -31,13 +31,13 @@ export default function Login() {
                         variant="outline-primary"
                         className="rounded-circle me-1"
                       >
-                        <FontAwesomeIcon icon={faFacebook} />
+                       
                       </Button>
                       <Button
                         variant="outline-primary"
                         className="rounded-circle"
                       >
-                        <FontAwesomeIcon icon={faInstagram} />
+                        
                       </Button>
                     </div>
                   </Col>

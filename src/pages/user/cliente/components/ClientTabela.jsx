@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Table } from "react-bootstrap";
-import { Context } from "../context/ClientContext";
+import { Context } from "../../context/ClientContext";
 
 function ClientRow({client}) {
   return (
