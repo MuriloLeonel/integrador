@@ -11,8 +11,6 @@ import PainelForm from "./pages/painel/PainelForm";
 import Perfil from "./pages/perfil/Perfil";
 import ParceiroContext from "../src/pages/user/context/ParceiroContext";
 import EnderecoContext from "../src/pages/user/context/EnderecoContext";
-import ClientContext from "./pages/user/context/ClientContext";
-import Cliente from "./pages/user/cliente/Cliente";
 
 export default function App() {
   return (
