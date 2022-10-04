@@ -1,9 +1,6 @@
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import Logo from "../../assets/img/Logo2.png";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 import { Link } from "react-router-dom";
 
 export default function Login() {
@@ -27,20 +24,6 @@ export default function Login() {
                 <Row>
                   <Col className="d-flex justify-content-between">
                     <h3>Entrar</h3>
-                    <div>
-                      <Button
-                        variant="outline-primary"
-                        className="rounded-circle me-1"
-                      >
-                        <FontAwesomeIcon icon={faFacebook} />
-                      </Button>
-                      <Button
-                        variant="outline-primary"
-                        className="rounded-circle"
-                      >
-                        <FontAwesomeIcon icon={faInstagram} />
-                      </Button>
-                    </div>
                   </Col>
                 </Row>
                 <Form>
