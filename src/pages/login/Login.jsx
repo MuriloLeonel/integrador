@@ -8,12 +8,14 @@ import { useContext, useState } from "react";
 export default function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+
   const { login } = useContext(Context);
 
   const submit = (event) => {
     event.preventDefault();
+
     login(email, password);
-  }
+  };
 
   return (
     <Container

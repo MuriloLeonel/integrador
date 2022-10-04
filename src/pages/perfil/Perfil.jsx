@@ -15,7 +15,7 @@ export default function Perfil() {
         height="180"
         alt="React Bootstrap logo"
       />
-        <h1 className="Text">Veja Nossos Produtos</h1>
+      <h1 className="Text">Veja Nossos Produtos</h1>
       <Accordion className="Descrição" defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Descrição</Accordion.Header>

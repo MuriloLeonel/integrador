@@ -12,6 +12,7 @@ export default function ClientUserContext({ children }) {
       email,
       password,
     });
+
     setIsLogged(true);
   };
   const logout = () => {
@@ -21,7 +22,7 @@ export default function ClientUserContext({ children }) {
 
   return (
     <Context.Provider value={{ user, isLogged, login, logout }}>
-        {children}
+      {children}
     </Context.Provider>
-    );
+  );
 }
