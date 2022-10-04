@@ -11,11 +11,9 @@ import PainelForm from "./pages/painel/PainelForm";
 import Perfil from "./pages/perfil/Perfil";
 import ParceiroContext from "../src/pages/user/context/ParceiroContext";
 import EnderecoContext from "../src/pages/user/context/EnderecoContext";
-import ClientContext from "./pages/user/context/ClientContext";
 
 export default function App() {
   return (
-    <ClientContext>
       <ParceiroContext>
         <EnderecoContext>
           <ThemeProvider
@@ -38,6 +36,5 @@ export default function App() {
           </ThemeProvider>
         </EnderecoContext>
       </ParceiroContext>
-    </ClientContext>
   );
 }
