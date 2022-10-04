@@ -2,12 +2,23 @@ import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import Logo from "../../assets/img/Logo2.png";
 
 import { Link } from "react-router-dom";
+import { Context } from "../user/context/ClientUserContext";
 
 export default function Login() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const { login } = useContext(Context);
+
+  const submit = (event) => {
+    event.preventDefault();
+    login(email, password);
+  }
+
   return (
     <Container
       fluid
       className="d-flex vh-100 justify-content-center align-items-center bg-light"
+      onSubmit={submit}
     >
       <Col xs={6} sm={8} md={10} lg={8} className="shadow-lg">
         <Card>
@@ -32,6 +43,8 @@ export default function Login() {
                     <Form.Control
                       type="email"
                       placeholder="Endereço de Email"
+                      value={email}
+                      onChange={(event) => setEmail(event.target.value)}
                     />
                   </Form.Group>
 
@@ -40,6 +53,8 @@ export default function Login() {
                     <Form.Control
                       type="password"
                       placeholder="Digite a senha"
+                      value={password}
+                      onChange={(event) => setPassword(event.target.value)}
                     />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicCheckbox">
