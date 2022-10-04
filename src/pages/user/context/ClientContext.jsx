@@ -9,12 +9,17 @@ export default function ClientContext({ children }) {
 
   //CRUD
   const create = (client) => {
-    fetch("https://businessproject-back.herokuapp.com/register",{
+    console.log(JSON.stringify(client));
+
+    fetch("https://businessproject-back.herokuapp.com/register", {
       method: "POST",
-      body: JSON.stringify(client)
+      body: JSON.stringify(client),
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
-    .then((res) => res.json())
-    .then((json) => console.log(json));
+      .then((res) => res.json())
+      .then((json) => console.log(json));
   };
 
   const update = () => {};
@@ -40,10 +45,12 @@ export default function ClientContext({ children }) {
     });
 
     setClients(filtered);
-  },[allClients, filter]);
+  }, [allClients, filter]);
 
   return (
-    <Context.Provider value={{ clients, create, update, remove, list, filter, setFilter }}>
+    <Context.Provider
+      value={{ clients, create, update, remove, list, filter, setFilter }}
+    >
       {children}
     </Context.Provider>
   );

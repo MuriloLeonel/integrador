@@ -12,7 +12,12 @@ export default function ClientsCrate() {
 
   const submit = (event) => {
     event.preventDefault();
-    create(nome, datanasc, email, password);
+
+    create({
+      nome,
+      email,
+      password,
+    });
   };
   return (
     <Container

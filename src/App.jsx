@@ -9,7 +9,6 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "./App.css";
 import PainelForm from "./pages/painel/PainelForm";
 import Perfil from "./pages/perfil/Perfil";
-import Header from "./pages/principal/components/Header";
 import ParceiroContext from "../src/pages/user/context/ParceiroContext";
 import EnderecoContext from "../src/pages/user/context/EnderecoContext";
 import ClientContext from "./pages/user/context/ClientContext";
