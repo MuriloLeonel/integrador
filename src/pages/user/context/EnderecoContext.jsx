@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 
 export const Context = React.createContext();
 
-export default function ParceiroContext({ children }) {
+export default function EnderecoContext({ children }) {
   const [endereco, setEndereco] = useState([]);
   const [allendereco, setAllEndereco] = useState([]);
   const [filter, setFilter] = useState([]);
 
   //CRUD
   const createEndereco = (ende) => {
-    fetch("https://businessproject-back.herokuapp.com/parceiro/",{
+    fetch("https://businessproject-back.herokuapp.com/parceiro/", {
       method: "POST",
-      body: JSON.stringify(ende)
+      body: JSON.stringify(ende),
     })
-    .then((res) => res.json())
-    .then((json) => console.log(json));
+      .then((res) => res.json())
+      .then((json) => console.log(json));
   };
 
   const update = () => {};
@@ -40,10 +40,20 @@ export default function ParceiroContext({ children }) {
     });
 
     setEndereco(filtered);
-  },[allendereco, filter]);
+  }, [allendereco, filter]);
 
   return (
-    <Context.Provider value={{ endereco, createEndereco, update, remove, list, filter, setFilter }}>
+    <Context.Provider
+      value={{
+        endereco,
+        createEndereco,
+        update,
+        remove,
+        list,
+        filter,
+        setFilter,
+      }}
+    >
       {children}
     </Context.Provider>
   );

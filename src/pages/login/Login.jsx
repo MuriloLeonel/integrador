@@ -1,7 +1,8 @@
-import { Button, Card, Col, Container, Form, Nav, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import Logo from "../../assets/img/Logo2.png";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import { Link } from "react-router-dom";
 
@@ -15,29 +16,29 @@ export default function Login() {
         <Card>
           <Row className="g-0">
             <Col md={6}>
-            <Button variant="light" as={Link} to="/" size="sm"><i class="bi bi-arrow-left"></i></Button>{'Home'}    
-              <img
-                className="img-fluid rounded-start"
-                src={Logo}
-              />
+              <Button variant="light" as={Link} to="/" size="sm">
+                <i class="bi bi-arrow-left"></i>
+              </Button>
+              {"Home"}
+              <img className="img-fluid rounded-start" src={Logo} alt="" />
             </Col>
             <Col md={6}>
               <Card.Body className="p-5">
                 <Row>
                   <Col className="d-flex justify-content-between">
                     <h3>Entrar</h3>
-                    <div >
+                    <div>
                       <Button
                         variant="outline-primary"
                         className="rounded-circle me-1"
                       >
-                       
+                        <FontAwesomeIcon icon={faFacebook} />
                       </Button>
                       <Button
                         variant="outline-primary"
                         className="rounded-circle"
                       >
-                        
+                        <FontAwesomeIcon icon={faInstagram} />
                       </Button>
                     </div>
                   </Col>
@@ -69,12 +70,14 @@ export default function Login() {
                     >
                       Entrar
                     </Button>
-                        <Button as={Link} to={`/login/create`}>
-                                Cadastrar
-                        </Button>
+                    <Button as={Link} to={`/login/create`}>
+                      Cadastrar
+                    </Button>
                     <div className=" d-grid gap-2">
-                      <Button  variant="link">Esqueceu a Senha? Clique Aqui</Button>
-                    </div>  
+                      <Button variant="link">
+                        Esqueceu a Senha? Clique Aqui
+                      </Button>
+                    </div>
                   </div>
                 </Form>
               </Card.Body>

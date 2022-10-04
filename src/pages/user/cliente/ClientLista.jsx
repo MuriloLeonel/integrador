@@ -16,7 +16,10 @@ export default function ClienteLista() {
       <ClienteFiltro />
       <Nav>
         <Nav.Item>
-          <Nav.Link as={Link} to="/clients"> Novo Cliente</Nav.Link>
+          <Nav.Link as={Link} to="/clients">
+            {" "}
+            Novo Cliente
+          </Nav.Link>
         </Nav.Item>
       </Nav>
       <ClienteTabela />
