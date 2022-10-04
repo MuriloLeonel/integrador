@@ -38,6 +38,6 @@ export default function App() {
           </ThemeProvider>
         </EnderecoContext>
       </ParceiroContext>
-    </ClientContext>
+    </ClientContext> 
   );
 }
