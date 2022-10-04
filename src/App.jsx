@@ -12,38 +12,32 @@ import Perfil from "./pages/perfil/Perfil";
 import ParceiroContext from "../src/pages/user/context/ParceiroContext";
 import EnderecoContext from "../src/pages/user/context/EnderecoContext";
 import ClientContext from "./pages/user/context/ClientContext";
-import ClienteTabela from "./pages/user/cliente/components/ClientTabela";
-import ClienteFiltro from "./pages/user/cliente/components/ClientFiltro";
 
 export default function App() {
   return (
     <ClientContext>
-      <ClienteFiltro>
-        <ClienteTabela>
-        <ParceiroContext>
-          <EnderecoContext>
-            <ThemeProvider
-              breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-              minBreakpoint="xxs"
-            >
-              <BrowserRouter>
-                <Routes>
-                  <Route path="/" element={<Home />}>
-                    <Route path="sobre" element={<ProdutoDetalhes />} />
-                    <Route index element={<HomeContent />} />
-                    <Route path="painel" element={<PainelForm />} />
-                    <Route path="/perfil" element={<Perfil />} />
-                  </Route>
-                  <Route path="/login" element={<Login />}></Route>
-                  <Route path="/login/create" element={<Create />}></Route>
-                  <Route path="/parceiro" element={<Parceiro />}></Route>
-                </Routes>
-              </BrowserRouter>
-            </ThemeProvider>
-          </EnderecoContext>
-        </ParceiroContext>
-        </ClienteTabela>
-      </ClienteFiltro>
+      <ParceiroContext>
+        <EnderecoContext>
+          <ThemeProvider
+            breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+            minBreakpoint="xxs"
+          >
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Home />}>
+                  <Route path="sobre" element={<ProdutoDetalhes />} />
+                  <Route index element={<HomeContent />} />
+                  <Route path="painel" element={<PainelForm />} />
+                  <Route path="/perfil" element={<Perfil />} />
+                </Route>
+                <Route path="/login" element={<Login />}></Route>
+                <Route path="/login/create" element={<Create />}></Route>
+                <Route path="/parceiro" element={<Parceiro />}></Route>
+              </Routes>
+            </BrowserRouter>
+          </ThemeProvider>
+        </EnderecoContext>
+      </ParceiroContext>
     </ClientContext>
   );
 }
