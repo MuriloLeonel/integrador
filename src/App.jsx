@@ -16,7 +16,6 @@ import Cliente from "./pages/user/cliente/Cliente";
 
 export default function App() {
   return (
-    <Cliente>
       <ParceiroContext>
         <EnderecoContext>
           <ThemeProvider
@@ -39,6 +38,5 @@ export default function App() {
           </ThemeProvider>
         </EnderecoContext>
       </ParceiroContext>
-    </Cliente>
   );
 }
